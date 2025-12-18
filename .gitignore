@@ -1,0 +1,20 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# Streamlit temp/config
+.streamlit/
+
+# Data files you do NOT want in Git
+*.parquet
+
+# OS junk
+.DS_Store
+
+# Logs
+*.log
