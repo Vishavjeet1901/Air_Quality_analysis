@@ -17,13 +17,13 @@ st.title("Air Quality Analysis & AQI Prediction")
 # Load Data and Model
 @st.cache_data
 def load_data():
-    return pd.read_csv("data.csv")
+    return pd.read_csv("gui_app/data.csv")
 
 @st.cache_resource
 def load_model():
-    model = joblib.load("models/aqi_model.pkl")
-    scaler = joblib.load("models/scaler.pkl")
-    features = joblib.load("models/features.pkl")
+    model = joblib.load("gui_app/models/aqi_model.pkl")
+    scaler = joblib.load("gui_app/models/scaler.pkl")
+    features = joblib.load("gui_app/models/features.pkl")
     return model, scaler, features
 
 
